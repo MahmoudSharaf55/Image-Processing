@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="197.0" prefWidth="763.0" style="-fx-background-color: #153462;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Main.templatematching">
+   <children>
+      <FontAwesomeIconView fill="WHITE" glyphName="ARROW_LEFT" layoutX="725.0" layoutY="40.0" onMousePressed="#back" size="30" />
+      <Label layoutX="193.0" layoutY="2.0" text="Template matching" textAlignment="CENTER">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="1.0" startY="0.29523809523809524">
+               <stops>
+                  <Stop color="#ff6d6d" />
+                  <Stop color="#708bff" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font name="Forte" size="50.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="473.0" layoutY="131.0" style="-fx-border-color: #ffafaf; -fx-border-radius: 20px 0 20px 0; -fx-background-radius: 20px 0 20px 0;" />
+      <AnchorPane layoutX="46.0" layoutY="131.0" style="-fx-border-color: #ffafaf; -fx-background-radius: 20px 0 20px 0; -fx-border-radius: 20px 0 20px 0;" />
+      <JFXButton alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" layoutX="182.0" layoutY="113.0" onAction="#browseImg" prefHeight="40.0" prefWidth="186.0" ripplerFill="#ffaeae" style="-fx-background-color: #FF6D6D; -fx-border-radius: 30px; -fx-background-radius: 50px;" text="Browse Image" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Ubuntu" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" layoutX="445.0" layoutY="113.0" onAction="#browseTemp" prefHeight="40.0" prefWidth="186.0" ripplerFill="#ffaeae" style="-fx-background-color: #FF6D6D; -fx-border-radius: 30px; -fx-background-radius: 50px;" text="Browse Template" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Ubuntu" size="15.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

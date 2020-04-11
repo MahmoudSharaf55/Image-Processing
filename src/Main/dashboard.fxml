@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="448.0" prefWidth="763.0" style="-fx-background-color: #293462;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Main.Controller">
+   <children>
+      <FontAwesomeIconView fill="WHITE" glyphName="TIMES" layoutX="725.0" layoutY="40.0" onMousePressed="#appClose" size="30" />
+      <Label layoutX="213.0" layoutY="2.0" text="image Processing" textAlignment="CENTER">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="1.0" startY="0.29523809523809524">
+               <stops>
+                  <Stop color="#ff6d6d" />
+                  <Stop color="#708bff" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font name="Forte" size="50.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="27.0" layoutY="111.0" onAction="#booleanOperation" prefHeight="40.0" prefWidth="178.0" ripplerFill="#ffaeae" style="-fx-background-color: #FF6D6D; -fx-border-radius: 30px; -fx-background-radius: 20px 0 20px 0;" text="BooleanOperation" textFill="WHITE">
+         <font>
+            <Font name="Ubuntu" size="15.0" />
+         </font>
+      </JFXButton>
+      <AnchorPane layoutX="473.0" layoutY="131.0" style="-fx-border-color: #ffafaf; -fx-border-radius: 20px 0 20px 0; -fx-background-radius: 20px 0 20px 0;" />
+      <AnchorPane layoutX="46.0" layoutY="131.0" style="-fx-border-color: #ffafaf; -fx-background-radius: 20px 0 20px 0; -fx-border-radius: 20px 0 20px 0;" />
+      <Label layoutX="27.0" layoutY="70.0" text="Part 1" textAlignment="CENTER">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="1.0" startY="0.29523809523809524">
+               <stops>
+                  <Stop color="#ff6d6d" />
+                  <Stop color="#708bff" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font name="Forte" size="27.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="217.0" layoutY="111.0" onAction="#edgeDetection" prefHeight="40.0" prefWidth="128.0" ripplerFill="#ffaeae" style="-fx-background-color: #FF6D6D; -fx-border-radius: 30px; -fx-background-radius: 20px 0 20px 0;" text="EdgeDetection" textFill="WHITE">
+         <font>
+            <Font name="Ubuntu" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="356.0" layoutY="111.0" onAction="#LoadDisplayImage" prefHeight="40.0" prefWidth="178.0" ripplerFill="#ffaeae" style="-fx-background-color: #FF6D6D; -fx-border-radius: 30px; -fx-background-radius: 20px 0 20px 0;" text="LoadDisplayImage" textFill="WHITE">
+         <font>
+            <Font name="Ubuntu" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="549.0" layoutY="111.0" onAction="#PointProcessing" prefHeight="40.0" prefWidth="178.0" ripplerFill="#ffaeae" style="-fx-background-color: #FF6D6D; -fx-border-radius: 30px; -fx-background-radius: 20px 0 20px 0;" text="PointProcessing" textFill="WHITE">
+         <font>
+            <Font name="Ubuntu" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="27.0" layoutY="169.0" onAction="#RescalingShifting" prefHeight="40.0" prefWidth="178.0" ripplerFill="#ffaeae" style="-fx-background-color: #FF6D6D; -fx-border-radius: 30px; -fx-background-radius: 20px 0 20px 0;" text="RescalingShifting" textFill="WHITE">
+         <font>
+            <Font name="Ubuntu" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="217.0" layoutY="169.0" onAction="#SmoothingImage" prefHeight="40.0" prefWidth="178.0" ripplerFill="#ffaeae" style="-fx-background-color: #FF6D6D; -fx-border-radius: 30px; -fx-background-radius: 20px 0 20px 0;" text="SmoothingImage" textFill="WHITE">
+         <font>
+            <Font name="Ubuntu" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="407.0" layoutY="169.0" onAction="#StaticFilter" prefHeight="40.0" prefWidth="178.0" ripplerFill="#ffaeae" style="-fx-background-color: #FF6D6D; -fx-border-radius: 30px; -fx-background-radius: 20px 0 20px 0;" text="StaticFilter" textFill="WHITE">
+         <font>
+            <Font name="Ubuntu" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="27.0" layoutY="265.0" onAction="#HistogramEqualization" prefHeight="40.0" prefWidth="178.0" ripplerFill="#ffaeae" style="-fx-background-color: #FF6D6D; -fx-border-radius: 30px; -fx-background-radius: 20px 0 20px 0;" text="HistogramEqualization" textFill="WHITE">
+         <font>
+            <Font name="Ubuntu" size="15.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="27.0" layoutY="224.0" text="Part 2" textAlignment="CENTER">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="1.0" startY="0.29523809523809524">
+               <stops>
+                  <Stop color="#ff6d6d" />
+                  <Stop color="#708bff" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font name="Forte" size="27.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="217.0" layoutY="265.0" onAction="#Threshold" prefHeight="40.0" prefWidth="128.0" ripplerFill="#ffaeae" style="-fx-background-color: #FF6D6D; -fx-border-radius: 30px; -fx-background-radius: 20px 0 20px 0;" text="Threshold" textFill="WHITE">
+         <font>
+            <Font name="Ubuntu" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="27.0" layoutY="365.0" onAction="#TemplateMatching" prefHeight="40.0" prefWidth="178.0" ripplerFill="#ffaeae" style="-fx-background-color: #FF6D6D; -fx-border-radius: 30px; -fx-background-radius: 20px 0 20px 0;" text="TemplateMatching" textFill="WHITE">
+         <font>
+            <Font name="Ubuntu" size="15.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="27.0" layoutY="324.0" text="Part 3" textAlignment="CENTER">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="1.0" startY="0.29523809523809524">
+               <stops>
+                  <Stop color="#ff6d6d" />
+                  <Stop color="#708bff" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font name="Forte" size="27.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
